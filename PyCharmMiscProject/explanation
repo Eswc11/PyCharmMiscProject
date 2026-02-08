@@ -1,0 +1,6 @@
+The program has two classes: Loan and LoanCalculator. The Loan class is a service class and is responsible for all loan calculations. 
+One Loan object represents a single loan and receives the loan amount, annual interest rate, and term in years. Since I didn't know the calculation formulas, I had to ask a smart friend for the formula. 
+Based on this data, the class provides methods for calculating the monthly payment and the total payment for the entire period. 
+The LoanCalculator class acts as a controller and has four methods. It interacts with the user: it requests input data, creates a Loan object, calls its methods, and then displays the results. 
+LoanCalculator itself doesn't perform the calculations; it only manages the program's operation.
+This ensures a separation of concerns: Loan calculates, and LoanCalculator manages the input and output.
